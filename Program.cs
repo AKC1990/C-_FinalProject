@@ -37,3 +37,14 @@ void FillArray(string[] array, string[] newArray)
     }
     return newArray;
 }
+
+// Метод, печатающий новый массив
+string[] PrintArray(string[] newArray)
+{
+    string result = "[ ";
+    for (int i = 0; i < array.Length; i++)
+    {
+        result += $"{newArray[i]} ";
+    }
+    return result + "]";
+}
