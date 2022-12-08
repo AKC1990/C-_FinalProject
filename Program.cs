@@ -40,16 +40,21 @@ string[] FillArray(string[] array, string[] newArray)
 }
 
 // Метод, печатающий новый массив
-string[] PrintArray(string[] newArray)
+string[] PrintArray(string[] array)
 {
     string result = "[ ";
     for (int i = 0; i < array.Length; i++)
     {
-        result += $"{newArray[i]} ";
+        result += $"{array[i]} ";
     }
     return result + "]";
 }
 
 // Клиентский код
 string[] myArray = {"Hello", "2", "world", ":-)"};
+int n = 3;
+string[] newArray = FillArray(myArray, CreateNewArray(CountOfElements(myArray, n)));
+Console.WriteLine(PrintArray(newArray));
+
+
 
