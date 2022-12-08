@@ -14,3 +14,26 @@ int CountOfElements(string[] array, int n)
     }
 }
 
+// Метод для создания нового массива
+string[] CreateNewArray(int Length)
+{
+    return new string[Length];
+}
+
+// Метод, заполняющий массив элементами определенный длины
+void FillArray(string[] array, string[] newArray)
+{
+    for (int i = 0; i < array.Length; i++)
+     {
+        for (int j = 0; j < newArray.Length;)
+        {
+            if (array[i] <= n) 
+            {
+                newArray[j] = array[i];
+                j++;
+            }
+
+        }
+    }
+    return newArray;
+}
