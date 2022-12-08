@@ -12,6 +12,7 @@ int CountOfElements(string[] array, int n)
     {
         if (array[i] <= n) count += 1;
     }
+    return count;
 }
 
 // Метод для создания нового массива
@@ -21,7 +22,7 @@ string[] CreateNewArray(int Length)
 }
 
 // Метод, заполняющий массив элементами определенный длины
-void FillArray(string[] array, string[] newArray)
+string[] FillArray(string[] array, string[] newArray)
 {
     for (int i = 0; i < array.Length; i++)
      {
@@ -48,3 +49,7 @@ string[] PrintArray(string[] newArray)
     }
     return result + "]";
 }
+
+// Клиентский код
+string[] myArray = {"Hello", "2", "world", ":-)"};
+
